@@ -51,27 +51,26 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile('README.md', readmeData, (err) =>
-    err ? console.error(err) : console.log('Success!'))
+        err ? console.error(err) : console.log('Your README has been created!'))
 }
 
 // function to initialize program
 function init() {
     inquirer
-    .prompt(questions)
-    .then((answers) => {
-      readmeData = generateMarkdown(answers);
-      console.log(readmeData);
-      writeToFile()
-    })
-    .catch((error) => {
-      if (error.isTtyError) {
-        console.log('tsty error');
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        console.log("somethign else")
-        // Something else went wrong
-      }
-    });
+        .prompt(questions)
+        .then((answers) => {
+            readmeData = generateMarkdown(answers);
+            writeToFile()
+        })
+        .catch((error) => {
+            if (error.isTtyError) {
+                console.log('tsty error');
+                // Prompt couldn't be rendered in the current environment
+            } else {
+                console.log("something went wrong")
+                // Something else went wrong
+            }
+        });
 }
 
 // function call to initialize program

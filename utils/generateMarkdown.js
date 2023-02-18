@@ -1,10 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  if (`${data.license}` === 'MIT') {
-    let badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   return `
   # ${data.title}
-  ${badge}
+  ![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-brightgreen.svg)
 
   ## Description
   
@@ -45,6 +43,6 @@ function generateMarkdown(data) {
   If you have any questions please email me here: ${data.email}
 
 `;
-}}
+}
 
 module.exports = generateMarkdown;
