@@ -1,5 +1,5 @@
 
-  # README Generator with ES6 & Node'js
+  # README Generator with ES6 & Node.js
   ![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 
   ## Description
@@ -16,9 +16,6 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
   
   ## Installation
   A user will need to clone the repository to their local machine and run npm install to install the Inquirer package.
@@ -30,15 +27,3 @@
 
   ## License
   MIT
-
-  ## Contributing
-  If you would like to contribute to the project you can do the following:
-  N/A
-
-  ## Tests
-  N/A
-
-  ## Questions
-  You can find my GitHUb here: [drrobertson9673](https://github.com/drrobertson9673)
-
-  If you have any questions please email me here: drrobertson9673@gmail.com
