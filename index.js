@@ -8,12 +8,24 @@ const questions = [
     {
         name: "title",
         message: "Please enter your project title",
-        type: "input"
+        type: "input",
+        validate(value) {
+            if (value.length) {
+                return true;
+            }
+            return 'You must add a title for your project';
+        }
     },
     {
         name: "description",
         message: "Please enter a description for your project",
-        type: "input"
+        type: "input",
+        validate(value) {
+            if (value.length) {
+                return true;
+            }
+            return 'You must add a description for your project';
+        }
     },
     {
         name: "installation",
@@ -44,12 +56,24 @@ const questions = [
     {
         name: "gitHub",
         message: "What is your GitHub username?",
-        type: "input"
+        type: "input",
+        validate(value) {
+            if (value.length) {
+                return true;
+            }
+            return 'You must add a gitHub username';
+        }
     },
     {
         name: "email",
         message: "What is your email address?",
-        type: "input"
+        type: "input",
+        validate(value) {
+            if (value.length) {
+                return true;
+            }
+            return 'You must add an email address';
+        }
     },
 ];
 
