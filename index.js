@@ -37,6 +37,11 @@ const questions = [
         type: "input"
     },
     {
+        name: "test",
+        message: "What tests can be performed for your project?",
+        type: "input"
+    },
+    {
         name: "gitHub",
         message: "What is your GitHub username?",
         type: "input"
@@ -64,11 +69,11 @@ function init() {
         })
         .catch((error) => {
             if (error.isTtyError) {
-                console.log('tsty error');
                 // Prompt couldn't be rendered in the current environment
+                console.log('tsty error');
             } else {
-                console.log("something went wrong")
                 // Something else went wrong
+                console.log("something went wrong")
             }
         });
 }

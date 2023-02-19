@@ -5,7 +5,6 @@ function generateMarkdown(data) {
   ![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-brightgreen.svg)
 
   ## Description
-  
   ${data.description}
   
   ## Table of Contents
@@ -19,29 +18,22 @@ function generateMarkdown(data) {
   ## Installation
   
   ${data.installation}
-  
   ## Usage
   
   ${data.usage}
-  
   ## License
   
   ${data.license}
-  
   ## Contributing
   
   ${data.contributing}
-  
   ## Tests
   
-  -testHere- Run node index.js to see if the file is created
-  
+  ${data.test}
   ## Questions
-  
   You can find my GitHUb here: [${data.gitHub}](https://github.com/${data.gitHub})
 
   If you have any questions please email me here: ${data.email}
-
 `;
 }
 
