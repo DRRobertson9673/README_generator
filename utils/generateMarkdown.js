@@ -16,20 +16,21 @@ function generateMarkdown(data) {
   * [Questions](#questions)
   
   ## Installation
-  
   ${data.installation}
+
   ## Usage
-  
   ${data.usage}
+
   ## License
-  
   ${data.license}
+
   ## Contributing
-  
+  If you would like to contribute to the project you can do the following:
   ${data.contributing}
+
   ## Tests
-  
   ${data.test}
+
   ## Questions
   You can find my GitHUb here: [${data.gitHub}](https://github.com/${data.gitHub})
 
